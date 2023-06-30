@@ -1,0 +1,156 @@
+﻿<UserControl x:Class="WPF.Views.PhoneView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPF.Views"
+             xmlns:t="clr-namespace:WPF.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+
+
+        <Style x:Key="AddButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#46bdf0" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Command" Value="{Binding AddPhoneCommand}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Green" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#eb7971" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Command" Value="{Binding DataContext.DeletePhoneCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+            <Setter Property="CommandParameter" Value="{Binding}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#bd0606" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="EditButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#46bdf0" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Command" Value="{Binding DataContext.EditPhoneCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+            <Setter Property="CommandParameter" Value="{Binding}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Blue" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="1" VerticalAlignment="Top" MaxWidth="600" Margin="10 0 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding Phone}" >
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="LightGray" BorderThickness="1" Margin="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding ID}" Margin="5" Grid.Column="0" FontWeight="Bold" FontSize="18" />
+                                <TextBox Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="1" FontSize="18" Background="Transparent" BorderBrush="#7b03fc" Padding="2" BorderThickness="1" />
+                                <TextBox Text="{Binding Company, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="2" FontSize="18" Background="Transparent" BorderBrush="#7b03fc" Padding="2" BorderThickness="1"/>
+                                <TextBox Text="{Binding Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="3" FontSize="18" Background="Transparent" BorderBrush="#7b03fc" Padding="2" BorderThickness="1"/>
+                                <TextBox Text="{Binding Count, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="4" FontSize="18" Background="Transparent" BorderBrush="#7b03fc" Padding="2" BorderThickness="1"/>
+                                <Button Content="Delete" Style="{StaticResource DeleteButtonStyle}" Grid.Column="5" MinWidth="100"/>
+                                <Button Content="Save" Style="{StaticResource EditButtonStyle}" Grid.Column="6" MinWidth="70"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Name:" VerticalAlignment="Center" Margin="0 0 10 0" FontWeight="Bold" FontSize="16"/>
+                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="200" VerticalAlignment="Center" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Company:" VerticalAlignment="Center" Margin="0 0 10 0" FontWeight="Bold" FontSize="16"/>
+                <TextBox Text="{Binding Company, UpdateSourceTrigger=PropertyChanged}" Width="200" VerticalAlignment="Center" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Price:" VerticalAlignment="Center" Margin="0 0 10 0" FontWeight="Bold" FontSize="16"/>
+                <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" Width="200" VerticalAlignment="Center" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Count:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0" FontWeight="Bold" FontSize="16"/>
+                <TextBox Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" Width="200" VerticalAlignment="Center" FontSize="16"/>
+            </StackPanel>
+
+            <Button Content="Add" Style="{StaticResource AddButtonStyle}" Grid.Row="4" FontSize="18" HorizontalAlignment="Left" MinWidth="120" MinHeight="30"/>
+        </Grid>
+    </Grid>
+</UserControl>

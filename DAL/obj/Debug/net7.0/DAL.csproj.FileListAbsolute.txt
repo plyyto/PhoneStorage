@@ -1,0 +1,56 @@
+D:\C#\labsOOP\DAL\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\C#\labsOOP\DAL\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+D:\C#\labsOOP\DAL\DAL\bin\Debug\net7.0\DAL.dll
+D:\C#\labsOOP\DAL\DAL\bin\Debug\net7.0\DAL.pdb
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.dll
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.pdb
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+D:\C#\labsOOP\DAL\DAL\obj\Debug\net7.0\ref\DAL.dll
+D:\C#\Zakazu\DAL\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\C#\Zakazu\DAL\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+D:\C#\Zakazu\DAL\DAL\bin\Debug\net7.0\DAL.dll
+D:\C#\Zakazu\DAL\DAL\bin\Debug\net7.0\DAL.pdb
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.dll
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.pdb
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+D:\C#\Zakazu\DAL\DAL\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\bin\Debug\net7.0\DAL.deps.json
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\bin\Debug\net7.0\DAL.dll
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\bin\Debug\net7.0\DAL.pdb
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.dll
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.pdb
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+C:\Users\Desktop\Desktop\PhoneStorage\DAL\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\bin\Debug\net7.0\DAL.deps.json
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\bin\Debug\net7.0\DAL.dll
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\bin\Debug\net7.0\DAL.pdb
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.dll
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.pdb
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+C:\Users\Desktop\Desktop\Нємцов Є.А\PhoneStorage\DAL\obj\Debug\net7.0\ref\DAL.dll

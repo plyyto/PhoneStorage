@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vms="clr-namespace:WPF.ViewModel"
+        xmlns:views="clr-namespace:WPF.Views"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#4679f0" Offset="0"/>
+                <GradientStop Color="#0b235c" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type vms:PhoneViewModel}">
+                <views:PhoneView />
+            </DataTemplate>
+        </Grid.Resources>
+
+        <ContentControl Content="{Binding}" />
+    </Grid>
+</Window>
